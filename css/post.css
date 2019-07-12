@@ -16,4 +16,19 @@
 
 }
 
+.button-post-page{
+    /* margin: 10px; */
+    background-color:red;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 30px;
+    width: 80px;
+    border-width: 1px;
+    padding: 15px;
+    padding-bottom: 31px;
+    float: right;
+}
+
+
+
 /* Set a style for all the remaining elements like Like button, Edit button, Comment button and so on. */

@@ -5,6 +5,7 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
    display: flex;
    flex-direction: row;
    justify-content: flex-end;
+   height: 128px;
 }
 
 .title_area
