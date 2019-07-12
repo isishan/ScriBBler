@@ -27,7 +27,7 @@
     </div>
 
     <div class="blogContent" style="margin: 40px">
-        <div id="blogTitle" class="blogTite">
+        <div id="blogTitle" class="blogTitle">
             <h id="blogTitleNew" contenteditable="false">The legacy of Jimi Hendrix</h>
         </div>
 
@@ -35,9 +35,9 @@
 
             <!-- Insert code for Edit/Save button and  -->
 
-                <p style="margin-bottom: 45px;"> 
+                <p> 
                     Jimi 
-                    <button  onclick="editSaveText()" class="button-post-page">
+                    <button  onclick="editSaveText()" class="button-post-page" style="float: right;">
                         <span id="button-post-page-edit" >
                             Edit
                         </span>
@@ -57,6 +57,42 @@
         </div>
 
     <!-- Insert code for Like button, Comment button, Comment box here-->
+    <div class="like-area">
+        <div style="height: 50px">
+            <button onclick="like()" class="button-post-page">
+                <span>
+                    <i class="fa fa-thumbs-up"></i>
+                </span>
+                <span id="like-button">
+                    Like
+                </span>
+                
+            </button>
+        </div>
+        <p class="like-text" id="like-text" style="font-family: 'Courier New', Courier, monospace; font-size:90%">
+            Be the first one to like this!
+        </p>
+    </div>
+    <div class="comment-area">
+        <div class="comment-box">
+            <textarea id="comment" class="comment-textarea" placeholder="Leave a comment..."></textarea>
+
+        </div>
+        <button onclick="cmnt()" class="button-post-page">
+            
+            <span id="like-button">
+                Comment
+            </span>
+            
+        </button>
+
+        <h4 >All Comments</h4>
+        <div class="all-comments" id="all-comments" style="display: none;">
+            
+
+        </div>
+
+    </div>
 
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             

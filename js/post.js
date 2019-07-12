@@ -23,3 +23,24 @@ function editSaveText(){
         title.setAttribute('style', 'border-style: none;'); 
     }
 }
+
+var likes=0;
+function like(){
+    likeButton=document.getElementById('like-button');
+    likeButton.innerText='Liked!';
+    likes++;
+    liketext=document.getElementById('like-text');
+    if(likes<=1)
+        liketext.innerText=`${likes} person likes this !`;
+    else
+    {
+        liketext.innerText=`${likes} people have liked this !`;
+    }
+}
+
+function cmnt(){
+    commentText=document.getElementById('comment');
+    allComments=document.getElementById('all-comments');
+    allComments.style.display='block';
+    allComments.innerHTML+='<div class="single-comment">'+ commentText.value +'</div>';
+}
