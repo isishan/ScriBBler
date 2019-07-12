@@ -1,0 +1,45 @@
+/* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
+the title "ScriBBler" & the sub-heading below "ScriBBLer" */
+.button_area
+{
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-end;
+}
+
+.title_area
+{
+    float: left;
+}
+.button2{
+   
+   margin: 10px;
+   background-color: blue;
+   color: white;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   height: 40px;
+   border-width: 1px;
+   padding: 15px;
+   padding-bottom: 31px;
+}
+
+.pageTitle{
+    font-family: 'Satisfy', cursive;
+    font-style: italic;
+    font-size: 40px;
+    color: blue;
+    height:50px;
+    width: 500px;
+    margin-bottom: 5px;
+    margin-top: 2px;
+ }
+
+.pageTagline{
+    font-family: 'Marck Script', cursive;
+    font-style: italic;
+    margin-top: 5px;
+    float: left;
+    height:50px;
+    width: 500px;
+    
+}
