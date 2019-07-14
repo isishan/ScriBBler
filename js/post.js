@@ -41,8 +41,12 @@ function like(){
 function cmnt(){
     commentText=document.getElementById('comment');
     allComments=document.getElementById('all-comments');
-    allComments.style.display='block';
-    allComments.innerHTML='<div class="single-comment">'+ commentText.value +'</div>' + allComments.innerHTML;
+    if(commentText.value!='')
+    {
+        allComments.style.display='block';
+        allComments.innerHTML='<div class="single-comment">'+ commentText.value +'</div>' + allComments.innerHTML;
+        commentText.value='';
+    }
 }
 
 var modal1 = document.getElementById("myModalSignup");
