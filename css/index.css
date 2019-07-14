@@ -58,8 +58,9 @@ body{
 .close {
   color: #aaa;
   float: right;
-  font-size: 28px;
+  font-size: 38px;
   font-weight: bold;
+  cursor: pointer;
 }
  
 .close:hover, .close:focus, .button:hover, .button3:hover {
