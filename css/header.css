@@ -1,29 +1,30 @@
 /* Set a style for all elements inside the header i.e. Sign Up button, Sign In button, 
 the title "ScriBBler" & the sub-heading below "ScriBBLer" */
-.button_area
-{
-   display: flex;
-   flex-direction: row;
-   justify-content: flex-end;
-   height: 128px;
+.button_area{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: 128px;
 }
 
-.title_area
-{
+.title_area{
     float: left;
 }
 .button2{
    
-   margin: 10px;
-   background-color: blue;
-   color: white;
-   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   height: 40px;
-   border-width: 0px;
-   padding: 15px;
-   padding-bottom: 31px;
-   box-shadow: 0px 8px 15px gray;
+    margin: 10px;
+    background-color: blue;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 40px;
+    border-width: 0px;
+    padding: 15px;
+    padding-bottom: 31px;
+    box-shadow: 0px 8px 15px gray;
+}
 
+.button2:hover{
+    cursor: pointer;
 }
 
 .pageTitle{
@@ -44,5 +45,4 @@ the title "ScriBBler" & the sub-heading below "ScriBBLer" */
     float: left;
     height:50px;
     width: 500px;
-    
 }

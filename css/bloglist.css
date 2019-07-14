@@ -116,6 +116,10 @@ body {
    padding-bottom: 31px;
 }
 
+.red:hover, .green:hover{
+  cursor: pointer;
+}
+
 .close:hover,
  .close:focus ,
  .post-more:hover,

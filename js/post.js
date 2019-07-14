@@ -8,9 +8,9 @@ function editSaveText(){
         buttonText.innerHTML='Save';
         buttonIcon.innerHTML='<i class="fa fa-save"></i>'
         text.setAttribute('contenteditable', 'true');
-        text.setAttribute('style', 'border-style: groove; font-size:20px;');
+        text.setAttribute('style', 'border-width: 1px; border-style: groove; ');
         title.setAttribute('contenteditable', 'true');
-        title.setAttribute('style', 'border-style: groove; font-size: 100%; font-family: \'Abel\', sans-serif; font-weight: bold;');
+        title.setAttribute('style', 'border-width: 1px; border-style: groove; font-size: 100%; font-family: \'Abel\', sans-serif; font-weight: bold;');
     }
 
     else 
@@ -42,5 +42,44 @@ function cmnt(){
     commentText=document.getElementById('comment');
     allComments=document.getElementById('all-comments');
     allComments.style.display='block';
-    allComments.innerHTML+='<div class="single-comment">'+ commentText.value +'</div>';
+    allComments.innerHTML='<div class="single-comment">'+ commentText.value +'</div>' + allComments.innerHTML;
+}
+
+var modal1 = document.getElementById("myModalSignup");
+var modal2 = document.getElementById("myModalSignin");
+console.log(modal1);
+console.log(modal2);
+
+window.onclick = function(event) {
+    if (event.target == modal1 || event.target==modal2 ) {
+      modal1.style.display = "none";
+      modal2.style.display = "none";
+    }
+  }
+
+function signup()
+{
+    modal1.style.display='none';
+    modal2.style.display='none';
+    modal1.style.display='block';
+}
+function signin()
+{
+    modal1.style.display='none';
+    modal2.style.display='none';
+    modal2.style.display='block';
+}
+
+function closeit()
+{
+    console.log('closing');
+    modal1.style.display='none';
+    modal2.style.display='none';   
+
+}
+
+function createpost()
+{
+  modal1.style.display='none';
+  modal2.style.display='none';
 }
