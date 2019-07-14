@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <head>
         
-        <link href='..\css\post.css' rel='stylesheet' type='text/css'>
-        <link href='..\css\header.css' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
-        <link href='..\css\font.css' rel='stylesheet' type='text/css'>
-    <style>        
-    </style>     
+    <link href='..\css\post.css' rel='stylesheet' type='text/css'>
+    <link href='..\css\header.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="..\font-awesome-4.7.0/css/font-awesome.min.css">
+    <link href='..\css\font.css' rel='stylesheet' type='text/css'>
+     
 </head>
 <body>
     <div class="header">
-            <!-- Insert code for Sign Up, Sign In button here. 
-            Add code for "ScriBBler" heading and the sub-heading -->
+            <!-- Code for Sign Up, Sign In button here. 
+            Code for "ScriBBler" heading and the sub-heading -->
         <span class="title_area">
             <p class="pageTitle">
                 ScriBBler
@@ -27,82 +26,77 @@
     </div>
 
     <div class="blogContent" style="margin: 40px">
-        <div id="blogTitle" class="blogTitle">
+        <div id="blogTitle" class="blogTitle">          <!--Blog Title-->
             <div id="blogTitleNew" contenteditable="false">The legacy of Jimi Hendrix</div>
         </div>
 
-        <div class="blogAuthor">
-
-            <!-- Insert code for Edit/Save button and  -->
-
-                <p> 
-                    Jimi 
-                    <button  onclick="editSaveText()" class="button-post-page" style="float: right;">
-                        <span id="button-post-page-edit" >
-                            Edit
-                        </span>
-                        <span id="icon-post-page-edit">
-                                <i class="fa fa-edit"></i>
-                        </span>
-                    </button>
-                </p>
-
-                
+        <div class="blogAuthor">                        <!--Blog Author name and Button for Edit/Save-->
+            <p> 
+                Jimi 
+                <button  onclick="editSaveText()" class="button-post-page" style="float: right;">
+                    <span id="button-post-page-edit" >
+                        Edit
+                    </span>
+                    <span id="icon-post-page-edit">
+                            <i class="fa fa-edit"></i>
+                    </span>
+                </button>
+            </p>
         </div>
 
-        <div id="blogText" class="blogText">
+        <div id="blogText" class="blogText">            <!--Blog Text which is editable-->
             <p id="blogBody" contenteditable="false" style="border-style: none;">
                     Jimi Hendrix was arguably the greatest instrumentalist in the history of rock music.[1] Hendrix expanded the range and vocabulary of the electric guitar into areas no musician had ever ventured before. His boundless drive, technical ability and creative application of such effects as distortion forever transformed the sound of rock and roll. While creating his unique musical voice and guitar style, Hendrix synthesized diverse genres, including blues, R&B, soul, British rock, American folk music, 1950s rock and roll, psychedelic and jazz. Hendrix favored overdriven amplifiers with high volume and gain.[119] He was instrumental in developing the previously undesirable technique of guitar amplifier feedback, and helped to popularize use of the wah-wah pedal in mainstream rock.[348] He rejected the standard barre chord fretting technique used by most guitarists in favor of fretting the low 6th string root notes with his thumb.[349] He applied this technique during the beginning bars of "Little Wing", which allowed him to sustain the root note of chords while also playing melody. This method has been described as piano style, with the thumb playing what a pianist's left hand would play and the other fingers playing melody as a right hand.[350] Having spent several years fronting a trio, he developed an ability to play rhythm chords and lead lines together, giving the audio impression that more than one guitarist was performing.[351][nb 41] He was the first artist to incorporate stereophonic phasing effects in rock music recordings.[354] Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."[3][nb 42] Aledort wrote: "In rock guitar, there are but two eras � before Hendrix and after Hendrix."
             </p>
         </div>
+ 
+        <div class="like-area">                         <!--Like button and No. of people who like it-->
+            <div style="height: 50px">
+                <button onclick="like()" class="button-post-page">
+                    <span>
+                        <i class="fa fa-thumbs-up"></i>
+                    </span>
+                    <span id="like-button">
+                        Like
+                    </span>
+                    
+                </button>
+            </div>
+            <p class="like-text" id="like-text" style="font-family: 'Courier New', Courier, monospace; font-size:90%">
+                Be the first one to like this!
+            </p>
+        </div>
 
-    <!-- Insert code for Like button, Comment button, Comment box here-->
-    <div class="like-area">
-        <div style="height: 50px">
-            <button onclick="like()" class="button-post-page">
-                <span>
-                    <i class="fa fa-thumbs-up"></i>
-                </span>
+        <div class="comment-area">                      <!--Comment area including comment box and all comments-->
+            <div class="comment-box">
+                <textarea id="comment" class="comment-textarea" placeholder="Leave a comment..."></textarea>
+
+            </div>
+            <button onclick="cmnt()" class="button-post-page">
+                
                 <span id="like-button">
-                    Like
+                    Comment
                 </span>
                 
             </button>
-        </div>
-        <p class="like-text" id="like-text" style="font-family: 'Courier New', Courier, monospace; font-size:90%">
-            Be the first one to like this!
-        </p>
-    </div>
-    <div class="comment-area">
-        <div class="comment-box">
-            <textarea id="comment" class="comment-textarea" placeholder="Leave a comment..."></textarea>
 
-        </div>
-        <button onclick="cmnt()" class="button-post-page">
-            
-            <span id="like-button">
-                Comment
-            </span>
-            
-        </button>
+            <h4 >All Comments</h4>
+            <div class="all-comments" id="all-comments" style="display: none;">     <!--Each new comment will appear here-->
+                
 
-        <h4 >All Comments</h4>
-        <div class="all-comments" id="all-comments" style="display: none;">
-            
+            </div>
 
         </div>
 
-    </div>
-
-    <div id="myModalSignup" class="modal">
+        <div id="myModalSignup" class="modal">          <!--Sign Up Modal-->
 
             <!-- Insert code for Sign Up modal here -->
             <div class="modal-content">
-                    <div class="modal-header">
-                            <span id="close" onclick="closeit()" class="close">&times;</span>
-                            <p style="text-align: center">Get Started</p>
-                            <hr style="width: 95%">
-                    </div>
+                <div class="modal-header">
+                    <span id="close" onclick="closeit()" class="close">&times;</span>
+                    <p style="text-align: center">Get Started</p>
+                    <hr style="width: 95%">
+                </div>
                 
                 
                 <form>
@@ -115,21 +109,21 @@
                     <p>Confirm Password</p>
                     <input class="input-form" type="password" name="passwordRe" id="passwordRe" placeholder="Confirm Password" required>
                     <button class="button3">Sign Up</button>
-    
+
                 </form>
             </div>
         </div>
-    
-        <div id="myModalSignin" class="modal">
-    
+        
+        <div id="myModalSignin" class="modal">          <!--Sign In Modal-->
+
             <!-- Insert code for Sign In modal here -->
             
             <div class="modal-content">
-                    <div class="modal-header">
-                            <span id="close" onclick="closeit()" class="close">&times;</span>
-                            <p style="text-align: center">Welcome Back</p>
-                            <hr style="width: 95%">
-                    </div>
+                <div class="modal-header">
+                    <span id="close" onclick="closeit()" class="close">&times;</span>
+                    <p style="text-align: center">Welcome Back</p>
+                    <hr style="width: 95%">
+                </div>
                 
                 
                 <form>
@@ -142,9 +136,9 @@
                 </form>
             
             </div>
-    
+
         </div>
-    
+    </div>
 
     <script src="..\js\post.js" defer></script>
     <script src="..\js\header.js">             

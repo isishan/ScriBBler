@@ -2,29 +2,27 @@
 <html>
 <head>
 
-    <!-- Place all CSS for header in this file -->
+    <!--  CSS for header in this file -->
     <link href='css\header.css' rel='stylesheet' type='text/css'>
 
-    <!-- Place all CSS for the rest of the elements in this file -->
+    <!--  CSS for the rest of the elements in this file -->
     <link href='css\index.css' rel='stylesheet' type='text/css'>
 
-	<!-- Place all CSS for fonts in this file -->
+	<!--  CSS for fonts in this file -->
     <link href='css\font.css' rel='stylesheet' type='text/css'>
 
 </head>
 <body>
-    <div id="main-container-div">
+    <div id="main-container-div">                   <!--Main container div containing everything visible initially-->
 
-        <div class="header">
-
-            <!-- Insert code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading -->
+        <div class="header">                        <!--code for Sign Up, Sign In button here. Add code for "ScriBBler" heading and the sub-heading-->
             <span class="title_area">
                 <p class="pageTitle">
-                        ScriBBler
-                    </p>
-                    <p class="pageTagline">
-                        Explore. Imagine. Create.
-                    </p>
+                    ScriBBler
+                </p>
+                <p class="pageTagline">
+                    Explore. Imagine. Create.
+                </p>
             </span>
             <span class="button_area">
                 <button class="button2" onclick="signin()">Sign In</button>
@@ -33,7 +31,7 @@
 
         </div>
            
-        <div class="postButtons" style="padding-top: 50px;">
+        <div class="postButtons" style="padding-top: 50px;">    <!--Contains Create Post and All Posts button-->
 
             <!-- Insert code for All Posts & Create Post button here -->
             <a href="html/bloglist.html">
@@ -45,7 +43,7 @@
 
     </div>
 
-    <div id="myModalSignup" class="modal">
+    <div id="myModalSignup" class="modal">          <!--Sign Up Modal-->
 
         <!-- Insert code for Sign Up modal here -->
         <div class="modal-content">
@@ -70,7 +68,7 @@
         </div>
     </div>
 
-    <div id="myModalSignin" class="modal">
+    <div id="myModalSignin" class="modal">          <!--Sign In Modal-->
 
         <!-- Insert code for Sign In modal here -->
         
@@ -95,9 +93,8 @@
 
     </div>
 
-    <div id="myModalCreatePost" class="modal">
+    <div id="myModalCreatePost" class="modal">      <!--Create Post Modal-->
 
-        <!-- Insert code for Sign Up modal here -->
         <div class="modal-content">
             <div class="modal-header">
                 <span id="close" onclick="closeit()" class="close">&times;</span>
